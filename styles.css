@@ -442,7 +442,7 @@ footer p {
       }
 
     footer {
-        top: 250%;
+        top: 235%;
         width: 95%;
     }
 
@@ -453,14 +453,15 @@ footer p {
     */
     .homeMain {
         z-index: -1;
-        width: 100%;
+        width: 95%;
         height: fit-content;
         justify-content: center;
         background-color: #A5A58D;
+        background-image: linear-gradient(#A5A58D, #B7B7A4);
     }
 
     .introContainer {
-        border-radius: 0;
+        background-color: unset;
         height: auto;
     }
 
@@ -476,25 +477,37 @@ footer p {
 
     .servicesContainer h2 {
         margin-top: 5%;
+        color: white;
     }
 
     .serviceGrid {
         flex-wrap: wrap;
         height: 100%;
-        width: 100%;
+        width: 95%;
     }
 
     .serviceCard {
         border-radius: 0;
-        height: 75%;
+        height: 100%;
         width: 100%;
         margin: 5% 0% 5% 0%;
+        border-bottom: 1px solid #DDBEA9;
         
+    }
+
+    .serviceCard h3 {
+        background-color: #A5A58D;
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 5% 0 5% 0;
+        border-radius: 0;
+        color: white;
     }
 
     .developerInfo {
         width: 95%;
-        top: 200%;
+        top: 180%;
     }
 
     .developerInfo img {
