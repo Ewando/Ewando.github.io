@@ -19,7 +19,6 @@ header {
     background-image: url("img/header/gabriela-tamara-cycman-1k_8uTXz85c-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50px 50px 0px 0px;
     position: absolute;
     width: 100%;
     height: 30%;
@@ -351,7 +350,21 @@ footer p {
         top: 0;
         width: 100%;
         align-items: flex-end;
+        background-position: 0px 0px;
+        background-repeat: repeat-x;
+        background-size:auto;
+        align-items: center;
+        animation: animatedBackground 30s linear infinite alternate;
     }
+
+    @keyframes animatedBackground {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      }
 
     h1 {
         margin: 0;
@@ -429,7 +442,7 @@ footer p {
       }
 
     footer {
-        top: 145%;
+        top: 250%;
         width: 95%;
     }
 
@@ -440,8 +453,8 @@ footer p {
     */
     .homeMain {
         z-index: -1;
-        width: 95%;
-        height: 40%;
+        width: 100%;
+        height: fit-content;
         justify-content: center;
         background-color: #A5A58D;
     }
@@ -457,12 +470,31 @@ footer p {
     }
 
     .servicesContainer {
-        display: none;
+        position: absolute;
+        top: 100%;
+    }
+
+    .servicesContainer h2 {
+        margin-top: 5%;
+    }
+
+    .serviceGrid {
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+
+    .serviceCard {
+        border-radius: 0;
+        height: 75%;
+        width: 100%;
+        margin: 5% 0% 5% 0%;
+        
     }
 
     .developerInfo {
         width: 95%;
-        top: 90%;
+        top: 200%;
     }
 
     .developerInfo img {
