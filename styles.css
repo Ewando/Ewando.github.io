@@ -1,0 +1,473 @@
+
+/* 
+
+    Universal styles for elements found in each page
+
+*/
+
+body {
+    background-color: #B7B7A4;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    background-image: url("img/header/gabriela-tamara-cycman-1k_8uTXz85c-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: dunley;
+    src: url(dunley-trial.regular.otf);
+}
+
+header h1, .navH2 {
+    font-family: dunley;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 12vh;
+}
+
+nav {
+    position: absolute;
+    width: 95%;
+    height: 10%;
+    top: 32.5%;
+    background-color: #6B705C;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity: 0.9;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.navH2 {
+    display: none;
+    position: absolute;
+    left: 5%;
+    font-size: 6vh;
+}
+
+#navBtn {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+nav li {
+    float: left;
+    border-right: 2px solid white;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    font-size: 2vh;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    transition: 0.3s;
+  }
+
+nav li a:hover {
+    color: #DDBEA9;
+}
+
+.navActive {
+    text-decoration: underline;
+}
+
+footer {
+    position: absolute;
+    height: 10%;
+    width: 85%;
+    top: 180%;
+    background-color: #6B705C;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #B7B7A4;
+    font-size: 2vh;
+    font-family: Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+/* 
+
+    Styles for homepage
+
+*/
+
+.homeMain {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 75%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: whitesmoke;
+    margin-bottom: 5%;
+}
+
+.introContainer {
+    position: relative;
+    height: 30%;
+    font-family: Helvetica, sans-serif;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    background-color: #A5A58D;
+}
+
+.introContainer h2, .servicesContainer h2, .developerInfo h3 {
+    width: 75%;
+    font-style: italic;
+    color: whitesmoke;
+    font-size: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+
+.introContainer hr, .developerInfo hr {
+    width: 75%;
+    height:2px;
+    border-style: none;
+    background-color: #DDBEA9;
+}
+
+.introContainer p, .developerInfo p {
+    width: 75%;
+    font-size: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+    margin-bottom: 2.5%;
+}
+
+.servicesContainer {
+    position: relative;
+    height: 70%;
+    width: 100%;
+}
+
+.servicesContainer h2 {
+    color: #6B705C;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+
+}
+
+.serviceGrid {
+    position:absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; 
+    height: 75%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.serviceCard {
+    position:relative;
+    width: 60%;
+    height: 90%;
+    background-color: whitesmoke;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cardInner {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #A5A58D;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+#billCalculator, #foodAlerts, #order {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#billCalculator {
+    background-image: url("img/home page/bill.jpg");
+    background-position: top;
+}
+
+#foodAlerts {
+    background-image: url("img/home page/veg.jpg");
+}
+
+#order {
+    background-image: url("img/home page/basket.jpg");
+  
+}
+
+.serviceCard:hover {
+    cursor: pointer;
+}
+
+.serviceCard h3 {
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+    color: #6B705C;
+    margin: 5%;
+    background-color: white;
+    width: 100%;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.cardInner h3 {
+    color: white;
+    font-size: 2vh;
+    background-color: unset;
+    border-radius: 0;
+    padding: unset;
+    width: unset;
+    margin-top: 10%;
+}
+
+.cardInner i {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 8vh;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    transition: 0.3s;
+    padding: 5%;
+}
+
+.cardInner i:hover {
+    top: 55%;
+    color: #DDBEA9;
+}
+
+
+.developerInfo {
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    height: 50%;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: whitesmoke;
+}
+
+.developerInfo h3 {
+    color: #6B705C;
+    font-family: Helvetica, sans-serif;
+}
+
+.developerInfo p {
+    color: #6B705C;
+    font-family: Helvetica, sans-serif;
+}
+
+.developerInfo img {
+    position: absolute;
+    height: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/* 
+
+    Styles for mobile and tablet devices
+
+*/
+
+
+@media only screen and (max-width: 700px) {
+
+    /* 
+
+        Universal mobile styles for elements found in each page
+
+    */
+   
+    header {
+        top: 0;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 10vh;
+    }
+
+    nav {
+        width: 95%;
+        top: 32.5%;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    nav h2 {
+        display: block;
+        font-size: 3vh;
+        font-family: Helvetica, sans-serif;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+    }
+
+    .navH2 {
+        opacity: 0;
+    }
+
+    .sticky {
+        top: 2.5%;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    #navBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+    }
+
+    .turn180 {
+        transform: rotate(-180deg);
+    }
+    
+    #navArrow {
+        display: inline-block;
+        color: white;
+        margin: 5px;
+        transition: 0.3s;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #a5a58d;
+        margin: 0;
+        padding: 0;
+        display: none;
+        border-radius: 0px 0px 50px 50px;
+        box-shadow:inset 0px 0px 0px 1px #6B705C;
+    }
+    
+    nav li {
+        float:none;
+        border-right: none;
+        border: 1px solid #6B705C;
+    }
+    
+    nav li:last-child {
+        border: none;
+    }
+    
+    nav li a {
+        font-size: 3vh;
+        padding: 5%;
+      }
+
+    footer {
+        top: 145%;
+        width: 95%;
+    }
+
+    /* 
+
+        Mobile styles for homepage
+
+    */
+    .homeMain {
+        z-index: -1;
+        width: 95%;
+        height: 40%;
+        justify-content: center;
+        background-color: #A5A58D;
+    }
+
+    .introContainer {
+        border-radius: 0;
+        height: auto;
+    }
+
+    .introContainer h2, h3 {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .servicesContainer {
+        display: none;
+    }
+
+    .developerInfo {
+        width: 95%;
+        top: 90%;
+    }
+
+    .developerInfo img {
+        height: 35%;
+    }
+
+
+  }
