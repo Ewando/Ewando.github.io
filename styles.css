@@ -54,7 +54,7 @@ p {
     font-size: 2vh;
     color: #373737;
     text-align: center;
-    margin: 10% 5% 10% 5%;
+    margin: 10% 5% 15% 5%;
 }
 
 #bot img {
@@ -62,7 +62,6 @@ p {
     left: 50%;
     transform: translate(-50%);
     width: 10%;
-    bottom: 35%;
 }
 
 #accountReg {
