@@ -12,8 +12,10 @@ $(document).ready(function(){
 
             $(this).text("By doing so we aim to promote health and productivity for our users. Interested in blooming?").fadeIn(500);
             $("#bot img").attr("src","img/progress3.png");
-            $('#accountReg').delay(2000).animate({bottom: '25%'});
+            $('#accountReg').delay(2000).animate({bottom: '30%'});
+            $('#signIn').delay(3000).animate({bottom: '0%'});
             $('#logo').fadeIn();
+           
           });
       
 

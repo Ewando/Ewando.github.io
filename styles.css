@@ -10,7 +10,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: radial-gradient(circle at center white, #D2CFE0 100%);
+    background: radial-gradient(circle at center, #D2CFE0 0, #D2CFE0, white 120%);
     overflow: hidden;
 }
 
@@ -22,8 +22,13 @@ body {
     align-items: center;
 }
 
-#middle, #top {
-    height: 30%;
+#top {
+    height: 20%;
+    display: flex;
+}
+
+#middle{
+    height: 40%;
     display: flex;
 }
 
@@ -37,18 +42,18 @@ h1 {
     font-size: 12vh;
     font-weight: 100;
     font-style: italic;
+    z-index: 4;
 }
 
 #logo {
     display: none;
     position: absolute;
-    height: 200%;
-    z-index: -1;
-    animation-name: spin;
+    height: 150%;
+    z-index: 2;
+    animation-name: spin, createBox;
     animation-duration: 8000ms;
-    animation-timing-function: linear;
-    animation-duration: 8000ms;
-    animation-name: createBox;
+    animation-iteration-count: infinite, 1;
+    
 }
 
 @keyframes createBox{
@@ -58,7 +63,7 @@ h1 {
 
     }
     to{
-        height: 200%;
+        height: 150%;
        
     }
 }
@@ -75,6 +80,7 @@ h1 {
 
 #yoga {
     height: 100%;
+    z-index: 4;
 }
 
 
@@ -100,12 +106,15 @@ p {
 
 #signIn {
     position: absolute;
-    bottom: 10%;
+    bottom: -25%;
     left: 50%;
+    padding: 2.5% 5% 1% 5%;
+    border-radius: 25px 25px 0 0;
     transform: translate(-50%);
     font-family: 'Nunito', sans-serif;
     font-size: 2vh;
-    color: #373737;
+    color: white;
+    background-color: #D7B0BA;
 }
 
 #bot img {
@@ -113,13 +122,13 @@ p {
     left: 50%;
     transform: translate(-50%);
     width: 10%;
-    bottom: 25%;
+    bottom: 30%;
 }
 
 #accountReg {
     
     position:absolute;
-    bottom: -15%;
+    bottom: -25%;
     left: 50%;
     transform: translate(-50%);
     height: 15%;
