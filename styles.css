@@ -53,6 +53,7 @@ h1 {
     animation-name: spin, createBox;
     animation-duration: 8000ms;
     animation-iteration-count: infinite, 1;
+    animation-timing-function: linear, linear;
     
 }
 
@@ -94,8 +95,9 @@ hr {
 
 .smallText {
     font-family: 'Nunito', sans-serif;
-    font-size: 2vh;
+    font-size: 4vw;
     color: #373737;
+    margin-top: 0%;
 }
 
 p {
