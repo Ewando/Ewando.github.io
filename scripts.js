@@ -10,7 +10,7 @@ $(document).ready(function(){
             $(this).text("By doing so we aim to promote health and productivity for our users. Interested in joining?").fadeIn(500);
             $("#bot img").attr("src","img/progress3.png");
 
-            $('#accountReg').delay(2000).animate({bottom: '15%'});
+            $('#accountReg').delay(2000).animate({bottom: '25%'});
               
           });
       

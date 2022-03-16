@@ -10,6 +10,8 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    background: radial-gradient(circle at center white, #D2CFE0 100%);
+
     
 }
 
@@ -35,6 +37,7 @@ h1 {
     color: white;
     font-size: 12vh;
     font-weight: 100;
+    font-style: italic;
 }
 
 #middle img {
@@ -54,7 +57,7 @@ p {
     font-size: 2vh;
     color: #373737;
     text-align: center;
-    margin: 10% 5% 15% 5%;
+    margin: 10% 5% 10% 5%;
 }
 
 #bot img {
@@ -62,6 +65,7 @@ p {
     left: 50%;
     transform: translate(-50%);
     width: 10%;
+    bottom: 25%;
 }
 
 #accountReg {
