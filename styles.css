@@ -11,8 +11,7 @@ body {
     height: 100%;
     width: 100%;
     background: radial-gradient(circle at center white, #D2CFE0 100%);
-
-    
+    overflow: hidden;
 }
 
 #top, #middle, #bot {
@@ -40,24 +39,38 @@ h1 {
     font-style: italic;
 }
 
-#middle img {
+#logo {
+    display: none;
+    position: absolute;
+    height: 200%;
+    z-index: -1;
+}
+
+
+
+#yoga {
     height: 100%;
 }
+
 
 hr {
     margin-top: 5%;
     width: 75%;
-    height: 2px;
+    height: 1px;
     border-style: none;
     background-color: white;
 }
 
 p {
+    position: absolute;
+    width: 75%;
     font-family: 'Nunito', sans-serif;
     font-size: 2vh;
     color: #373737;
-    text-align: center;
+    text-align: left;
+    left: 12.5%;
     margin: 10% 5% 10% 5%;
+
 }
 
 #bot img {
