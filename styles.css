@@ -44,6 +44,31 @@ h1 {
     position: absolute;
     height: 200%;
     z-index: -1;
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-timing-function: linear;
+    animation-duration: 8000ms;
+    animation-name: createBox;
+}
+
+@keyframes createBox{
+    from{
+        height:0px;
+        
+
+    }
+    to{
+        height: 200%;
+       
+    }
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
 }
 
 
@@ -61,16 +86,26 @@ hr {
     background-color: white;
 }
 
-p {
-    position: absolute;
-    width: 75%;
+.smallText {
     font-family: 'Nunito', sans-serif;
     font-size: 2vh;
     color: #373737;
-    text-align: left;
-    left: 12.5%;
-    margin: 10% 5% 10% 5%;
+}
 
+p {
+    position: absolute;
+    text-align: center;
+    padding: 5%;
+}
+
+#signIn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
+    color: #373737;
 }
 
 #bot img {
@@ -92,8 +127,6 @@ p {
     border-radius: 25px;
     border: none;
     background-color: #9BADCB;
-    font-family: 'Nunito', sans-serif;
-    font-size: 2vh;
     color: white;
 }
 
