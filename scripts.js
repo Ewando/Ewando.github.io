@@ -22,6 +22,9 @@ $(document).ready(function(){
 
       });
 
+      $( "#accountReg" ).click(function() {
+        window.location.href = "reg page/Register.html";
+      });
      
 
   });

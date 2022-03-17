@@ -1,0 +1,17 @@
+/****** Object:  Table [dbo].[DailyGoalsPool]    Script Date: 16/03/2022 19:33:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DailyGoalsPool](
+	[dailygoalID] [INT] NOT NULL,
+	[title] [VARCHAR](250) NOT NULL,
+	[description] [VARCHAR](250) NOT NULL,
+		
+ CONSTRAINT [PK_dailygoalID] PRIMARY KEY CLUSTERED 
+(
+	[dailygoalID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+)

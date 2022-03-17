@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #D2CFE0;
+    overflow: hidden;
+}
+
+#registerContainer{
+
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+#top, #middle, #bot {
+    position: absolute;
+    width: 100%;
+}
+
+#top {
+    top: 0;
+    height: 20%;
+}
+
+#middle {
+    top: 20%;
+    height: 70%;
+}
+
+#bot {
+    height: 10%;
+    top: 90%;
+}
+
+#registerContainer h1, #registerContainer p, label {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 4vw;
+    color: #373737;
+}
+
+#registerContainer h1 {
+    margin-top: 0;
+    font-size: 7vw;
+    font-weight: bold;
+    margin: 10% 0 0 5%;
+}
+
+#registerContainer p {
+    margin: 5% 0 0 5%;
+    width:90%;
+}
+
+hr{
+    width: 75%;
+    height: 1px;
+    border-style: none;
+    background-color: #373737;
+    margin-top: 5%;
+}
+
+form {
+
+  position:absolute;
+  height:100%;
+  width:90%;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+input[type="text"]
+{
+    font-size: 4vw;
+    width:90%;
+    padding:2.5%;
+    margin:7.5% 0% 7.5% 0;
+    border-radius: 60px;
+    height:5%;
+}
+
+input[type="submit"]{
+
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 8%;
+    width: 50%;
+    border-radius: 25px;
+    border: none;
+    background-color: #9BADCB;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4vw;
+    margin-top:5%;
+
+}
+
+label {
+
+    font-size: 7vw;
+
+}
+
+#bot p {
+    text-align: center;
+}

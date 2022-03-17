@@ -1,0 +1,23 @@
+/****** Object:  Table [dbo].[UserGoals]    Script Date: 16/03/2022 19:43:47 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UserGoals](
+	[dailygoalID] [INT] NOT NULL,
+	[weeklygoalID] [INT] NOT NULL,
+	[title] [VARCHAR](250) NOT NULL,
+	[isCompleted] [BIT] NOT NULL,
+	[dateCompleted] [DATETIME] NOT NULL,
+		
+ CONSTRAINT [FK_dailygoalID] PRIMARY KEY CLUSTERED 
+(
+	[dailygoalID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90) ON [PRIMARY]
+)
+
+ALTER TABLE [dbo].[UserGoals]  WITH NOCHECK ADD  CONSTRAINT [FK__weeklygoalID]FOREIGN KEY([weeklygoalID])
+REFERENCES [dbo].[WeeklyGoalsPool] ([weeklygoalID])
+GO
