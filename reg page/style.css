@@ -80,7 +80,9 @@ input[type="text"]
 }
 
 input[type="submit"]{
-
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     position:absolute;
     left: 50%;
     transform: translate(-50%);
@@ -93,8 +95,6 @@ input[type="submit"]{
     font-family: 'Nunito', sans-serif;
     font-size: 4vw;
     margin-top:5%;
-    -webkit-appearance: none;
-
 }
 
 label {

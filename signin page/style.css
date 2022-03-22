@@ -97,6 +97,9 @@ form {
   }
 
 #signIn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     position:absolute;
     left: 50%;
     transform: translate(-50%);
@@ -109,7 +112,7 @@ form {
     font-family: 'Nunito', sans-serif;
     font-size: 4vw;
     margin-top:5%;
-    -webkit-appearance: none;
+   
 
 }
 
