@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #D2CFE0;
+    overflow: hidden;
+}
+
+
+#signinContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at center, #D2CFE0 0, #D2CFE0, white 120%);
+    overflow: hidden;
+}
+
+#top, #middle, #bot {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#top {
+    height: 30%;
+}
+
+#middle {
+    height: 60%;
+}
+
+#bot {
+    height: 10%;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 12vh;
+    font-weight: 100;
+    font-style: italic;
+    position: absolute; 
+    bottom: 0;
+    z-index: 10;
+    margin-bottom: 0;
+    
+}
+
+#logo {
+    position: absolute; 
+    opacity:0.4;
+    width: 125%;
+    z-index: 0;
+    animation-name: spin;
+    animation-duration: 32000ms;
+    animation-iteration-count: infinite, 1;
+    animation-timing-function: linear, linear;
+    
+}
+
+hr {
+    margin-top: 5%;
+    width: 75%;
+    height: 1px;
+    border-style: none;
+    background-color: white;
+}
+
+form {
+
+    position:absolute;
+    height:100%;
+    width:90%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    margin-top: 10%;
+  }
+  
+  input[type="text"]
+  {
+      font-size: 4vw;
+      width:90%;
+      padding:2.5%;
+      margin:5% 0% 5% 0;
+      border-radius: 60px;
+      height:5%;
+  }
+
+  label {
+  
+      font-size: 7vw;
+  
+  }
+
+#signIn {
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 8%;
+    width: 50%;
+    border-radius: 25px;
+    border: none;
+    background-color: #D7B0BA;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4vw;
+    margin-top:5%;
+
+}
+
+#bot p {
+    text-align: center;
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+ a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 4vw;
+    color: #373737;
+}
+
+#resetPass {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20%;
+}
+
+#createAccount {
+    margin-bottom: 10%;
+}
